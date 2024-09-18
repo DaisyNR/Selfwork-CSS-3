@@ -1,0 +1,180 @@
+#yellow {
+    background-color: rgb(247, 235, 11);
+}
+
+#yellow :hover {
+    background-color: rgb(24, 7, 86);
+    color: white;
+}
+
+#yellow :active {
+    background-color: white;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(24, 7, 86);
+    text-shadow: 6px 6px 3px rgb(255, 255, 255);
+    background-image: linear-gradient( 120deg, rgba(193, 210, 228, 0.3), rgba(248, 236, 13, 0.302));
+    animation: anima-testo 3s;
+}
+
+h2 {
+    text-align: center;
+}
+
+.large {
+    font-size: larger;
+}
+
+.date {
+    font-size: smaller;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#box {
+    height: 100px;
+    background-image: url(./media/fiori1.jpg);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article {
+    padding: 20px;
+    width: 28%;
+}
+
+nav {
+    position: fixed;
+    width: 99%;
+    top: 0px;
+}
+
+nav dl {
+    background-color: white;
+    border: 5px solid rgba(193, 210, 228, 0.3);   
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+nav dt {
+    margin: 0px 20px;
+}
+
+#contatto {
+    margin-left: 20px;
+}
+
+dt:hover {
+    border-bottom: 5px dashed rgba(232, 224, 56, 0.3);
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    background-color:rgba(220, 247, 11, 0.4);
+    padding: 8px;
+}
+
+#asidetitle {
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+#asidetext {
+    font-style: oblique;
+    font-size: smaller;
+    line-height: 25px;
+}
+
+header {
+    margin-top: 110px;
+}
+
+#tornasu {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+@keyframes anima-testo {
+    0%{
+        transform: translateX(-2000px);
+        scale: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav dl{
+        min-width: 40vh;
+        flex-direction: column;
+        margin-bottom: 50%;
+        height: 290px;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        position: static;
+        top: 0px;
+    }
+
+    header {
+        margin-top: 8px;
+    }
+    
+    .main-flex{
+        flex-direction: column;
+    }
+
+    article{
+        padding: 10px;
+        min-width: 80%;
+    }
+
+    img {
+        width: 95%;
+        height: 95%;
+    }
+
+    #tornasu {
+        width: 15%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    #box {
+        height: 80px;
+    }
+
+    #logoAulab {
+        height: 68%;
+        width: 90%;
+    }
+
+}
